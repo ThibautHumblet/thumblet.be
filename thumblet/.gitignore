@@ -44,8 +44,3 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-
-/server/node_modules
-/front/node_modules
-/app/config/env.js
-/scraper/mysql-credentials.sh
