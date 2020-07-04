@@ -1,1 +1,21 @@
-<p>header works!</p>
+<div class="navbar">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <a [routerLink]="['/index']">THIBAUT HUMBLET</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-links">
+      <a [routerLink]="['/index']">HOME</a>
+      <a [routerLink]="['/portfolio']">PORTFOLIO</a>
+      <a [routerLink]="['/aboutme']">OVER MIJ</a>
+      <a [routerLink]="['/contact']">CONTACT</a>
+    </div>
+  </div>

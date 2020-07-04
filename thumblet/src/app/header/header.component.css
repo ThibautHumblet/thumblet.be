@@ -1,0 +1,146 @@
+/*#region Navbar*/
+.navbar {
+    min-height: 10vh;
+    width: 100%;
+    background-color: #C6CFCE;
+    margin: 0px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar>.navbar-header {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navbar>.navbar-header>.navbar-title {
+    display: inline-block;
+    vertical-align: middle;
+    color: #F87014;
+    font-family: 'Teko', sans-serif;
+}
+
+.navbar>.navbar-header>.navbar-title>a {
+    text-decoration: none;
+    color: #DC2500;
+    font-family: 'Teko', sans-serif;
+    font-size: 36px;
+}
+
+.navbar>.navbar-btn {
+    display: none;
+}
+.navbar>.navbar-links>a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #333436;
+    font-family: 'Teko', sans-serif;
+}
+
+.navbar>.navbar-links>a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #C6CFCE;
+    cursor: pointer;
+}
+
+.navbar>#navbar-check {
+    display: none;
+}
+
+.navbar-title p {
+    display: inline-block;
+    margin-right: -4px;
+    box-sizing: border-box;
+}
+/*#endregion */
+
+ /* Smartphone layout */
+ @media (max-width: 480px) {
+    /*#region Navbar*/
+    .navbar-title {
+       padding: 0px 10px 10px 10px;
+   }
+/*#endregion */
+}
+
+@media(max-width: 750px) {
+    /*#region Navbar*/
+    .navbar>.navbar-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .navbar>.navbar-header>.navbar-title {
+        padding-top: 2vh;
+    }
+    .navbar>.navbar-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .navbar>.navbar-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #333436;
+    }
+    .navbar>.navbar-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #C6CFCE;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 10vh;
+        left: 0px;
+        z-index: 1;
+        font-size: 32px;
+    }
+    .navbar>.navbar-links>a {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .navbar>#navbar-check:not(:checked)+.navbar-links {
+        height: 0px;
+    }
+    .navbar>#navbar-check:checked+.navbar-links {
+        height: calc(100vh - 10vh);
+        overflow-y: auto;
+        padding-top: 0;
+    }
+    /*#endregion */
+}
+
+ /* Laptop layout */
+@media(min-width: 751px) {
+    /*#region Navbar*/
+    .navbar img {
+        position: relative;
+        padding-top: 50px;
+        height: 175px;
+    }
+    .navbar>.navbar-links {
+        font-size: 20px;
+        justify-content: right;
+    }
+    .navbar{
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+/*#endregion */
+}
+
+ /* XL screen layout */
+ @media(min-width: 1200px) {
+    /*#region Navbar*/
+    .navbar>.navbar-links {
+        font-size: 34px;
+    }
+/*#endregion */
+}
