@@ -19,6 +19,12 @@ export class HeaderComponent implements OnInit {
         let element = items[i];
         element.style.display ="inline";
     }
+
+    var items:any = document.getElementsByClassName('navbar-title');
+    for (let i = 0; i < items.length; i++) {
+      let element = items[i];
+      element.style.margin = "0 0 0 0"
+    }
   }
 
   shrinkTitle() {
@@ -26,6 +32,12 @@ export class HeaderComponent implements OnInit {
     for (let i = 0; i < items.length; i++) {
         let element = items[i];
         element.style.display ="none";
+    }
+
+    var items:any = document.getElementsByClassName('navbar-title');
+    for (let i = 0; i < items.length; i++) {
+      let element = items[i];
+      element.style.margin = "0 4vw 0 0"
     }
   }
 }
