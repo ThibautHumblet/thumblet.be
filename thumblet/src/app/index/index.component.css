@@ -1,0 +1,21 @@
+.profile {
+    border-width: .2px;
+    border-radius: 1em;
+    padding: .7vw;
+    background-color: #333436;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profilepic {
+    max-width: 7vw;
+    max-height: 7vh;
+    border-radius: 45px;
+
+}
+
+.profileInfo {
+margin-left: 1.5vw;
+color: #C6CFCE;
+}

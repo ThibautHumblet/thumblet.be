@@ -109,6 +109,9 @@ section {
 
 body {
   line-height: 1;
+  background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 ol,
@@ -149,4 +152,10 @@ table {
 
 h1 {
   font-size: xx-large;
+  margin-top: 8vh;
+  margin-bottom: 5vh;
+}
+
+p {
+	margin-bottom: 2vh;
 }
