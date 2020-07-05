@@ -26,6 +26,13 @@
     font-size: 36px;
 }
 
+.titleAnimation {
+    text-decoration: none;
+    color: #333436;
+    font-family: 'Teko', sans-serif;
+    font-size: 36px;
+}
+
 .navbar>.navbar-btn {
     display: none;
 }
@@ -131,6 +138,10 @@
         display: inline-flex;
         align-items: center;
         justify-content: space-around;
+    }
+
+    .titleAnimation{
+        display: none;
     }
     
 /*#endregion */
