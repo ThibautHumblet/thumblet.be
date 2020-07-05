@@ -1,7 +1,7 @@
 <div class="navbar">
     <div class="navbar-header">
-      <div class="navbar-title">
-        <a [routerLink]="['/index']">THIBAUT HUMBLET</a>
+      <div class="navbar-title" (mouseenter)="expandTitle()" (mouseleave)="shrinkTitle()">
+        <a [routerLink]="['/index']">T<span class="titleAnimation">HIBAUT </span>HUMBLET.be</a>
       </div>
     </div>
     <div class="navbar-btn">

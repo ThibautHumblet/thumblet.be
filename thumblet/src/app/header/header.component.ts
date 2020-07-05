@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { async } from '@angular/core/testing';
 
 @Component({
   selector: 'app-header',
@@ -12,4 +13,19 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  expandTitle() {
+    var items:any = document.getElementsByClassName('titleAnimation');
+    for (let i = 0; i < items.length; i++) {
+        let element = items[i];
+        element.style.display ="inline";
+    }
+  }
+
+  shrinkTitle() {
+    var items:any = document.getElementsByClassName('titleAnimation');
+    for (let i = 0; i < items.length; i++) {
+        let element = items[i];
+        element.style.display ="none";
+    }
+  }
 }
