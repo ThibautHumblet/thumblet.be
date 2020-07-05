@@ -10,6 +10,7 @@
 .navbar>.navbar-header {
     display: inline-block;
     vertical-align: middle;
+    margin-left: 5vw;
 }
 
 .navbar>.navbar-header>.navbar-title {
@@ -83,7 +84,6 @@
     }
     .navbar>.navbar-btn>label {
         display: inline-block;
-        width: 50px;
         height: 50px;
         padding: 13px;
     }
@@ -97,7 +97,7 @@
         position: absolute;
         display: block;
         width: 100%;
-        background-color: #C6CFCE;
+        background-color: #B2BAB9;
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
@@ -137,7 +137,14 @@
     .navbar{
         display: inline-flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content:stretch;
+    }
+    .navbar>.navbar-header {
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+    .navbar-title {
+        margin-right: 4vw;
     }
 
     .titleAnimation{
