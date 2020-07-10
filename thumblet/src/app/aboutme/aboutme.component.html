@@ -1,7 +1,21 @@
-<p>aboutme works!</p>
-<mgl-timeline>
-  <mgl-timeline-entry>
-      <mgl-timeline-entry-header>Header!</mgl-timeline-entry-header>
+<div class="content">
+  <h1>Over mij</h1>
+  <input name="professional" type="checkbox" [(ngModel)]="professional" />
+  <label for="professional">Professioneel</label>
+  <input name="kazou" type="checkbox" [(ngModel)]="kazou" />
+  <label for="kazou">Kazou</label>
+  <input name="other" type="checkbox" [(ngModel)]="other" />
+  <label for="other">Andere</label>
+  <mgl-timeline [alternate]="false" [focusOnOpen]="true" [side]="left">
+    <mgl-timeline-entry>
+        <mgl-timeline-entry-header>Hello World!</mgl-timeline-entry-header>
+        <mgl-timeline-entry-content>Content</mgl-timeline-entry-content>
+        <mgl-timeline-entry-side>1999</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+    <mgl-timeline-entry>
+      <mgl-timeline-entry-header>Start Kardinaal Van Roey Instituut</mgl-timeline-entry-header>
       <mgl-timeline-entry-content>Content</mgl-timeline-entry-content>
+      <mgl-timeline-entry-side>2011</mgl-timeline-entry-side>
   </mgl-timeline-entry>
 </mgl-timeline>
+</div>

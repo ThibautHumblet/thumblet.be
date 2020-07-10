@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MglTimelineModule } from 'angular-mgl-timeline';
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MglTimelineModule } from 'angular-mgl-timeline';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MglTimelineModule
+    MglTimelineModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
