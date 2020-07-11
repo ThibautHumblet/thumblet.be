@@ -1,0 +1,54 @@
+h2 {
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+}
+
+.portfolio {
+    display: grid;
+    grid-area: portfolio;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+}
+
+.project {
+    width: auto;
+    height: 100%;
+    background-color: #C6CFCE;
+    box-shadow: #060606;
+    border-radius: 20px;
+    padding-top: .4em;
+    padding-left: .4em;
+    padding-right: .4em;
+    cursor: pointer;
+}
+
+.thumbnail {
+    max-width: 100%;
+    margin-bottom: -1em;
+}
+
+.project>p{
+    margin-top: 1em;
+}
+
+.tech {
+    font-style: italic;
+    color: #060606;
+    border-style: solid;
+    background-color: #F87014;
+    border-radius: 45px;
+    padding: .4em;
+    margin-right: .5vw;
+}
+
+@media(min-width: 751px){
+    .portfolio{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 1200px) {
+    .portfolio{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
