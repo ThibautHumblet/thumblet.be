@@ -22,6 +22,10 @@ h2 {
     cursor: pointer;
 }
 
+.project:active{
+    border-color: #F87014;
+}
+
 .thumbnail {
     max-width: 100%;
     margin-bottom: -1em;
@@ -39,6 +43,10 @@ h2 {
     border-radius: 45px;
     padding: .4em;
     margin-right: .5vw;
+}
+
+.tech:first-of-type {
+    margin-left: -.2vw;
 }
 
 @media(min-width: 751px){

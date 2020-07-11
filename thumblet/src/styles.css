@@ -159,3 +159,29 @@ h1 {
 p {
 	margin-bottom: 2vh;
 }
+
+.arrow {
+  box-sizing: border-box;
+  height: 2vw;
+  width: 2vw;
+  border-style: solid;
+  border-color: #060606;
+  border-width: 0px .5em .5em 0px;
+  transform: rotate(135deg);
+  display: table-cell;
+  cursor: pointer;
+}
+
+.arrow:hover{
+    border-color: #333436;
+}
+
+.title {
+  display: table;
+  vertical-align: middle;
+}
+
+.title>h1 {
+    display: table-cell;
+    vertical-align: middle;
+}
