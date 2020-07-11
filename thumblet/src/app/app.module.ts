@@ -9,6 +9,10 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ContactComponent } from './contact/contact.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MglTimelineModule } from 'angular-mgl-timeline';
+import { FormsModule }   from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +24,10 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MglTimelineModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
