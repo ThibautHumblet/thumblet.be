@@ -99,6 +99,10 @@ h2 {
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .image-wrapper {
     background-image: url(https://assets.website-files.com/5d9ebe3…/5da9c34…_floating-preview.jpg);
     background-position: 50% 50%;

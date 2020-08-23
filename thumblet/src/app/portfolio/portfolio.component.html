@@ -1,9 +1,10 @@
 <div class="content">
   <h1>Portfolio</h1>
-  <p>Hieronder is een overzicht van alle noemenswaardige projecten ik reeds heb gedaan, met eventueel extra uitleg,
-    naargelang de complexiteit van elk project. Ook eventuele projectpartners zijn hier terug te vinden.</p>
-  <p>De uitleg kan heel technisch overkomen voor niet-informatici. Heb je specifieke vragen over een project? Is er iets
-    niet duidelijk? Aarzel dan niet om me te contacteren!</p>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias laboriosam esse laborum totam sint omnis magni
+    dolor explicabo repudiandae natus.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, natus repellat ullam, quaerat deleniti,
+    cupiditate repudiandae distinctio soluta nihil adipisci a placeat fuga aspernatur hic. Perferendis architecto at
+    aliquid unde!</p>
 
   <div class="grid-wrapper"></div>
 
@@ -28,14 +29,34 @@
 
   <div class="portfolio-grid grid-images">
     <div class="image-wrapper col">
-      <img src="assets/img/ScreenshotCurrently01.jpg" class="thumbnail">
-      <span class="tech">Typescript</span><span class="tech">NodeJS</span><span class="tech">Python</span>
+      <img src="assets/img/ScreenshotCurrently04.jpg" class="thumbnail">
+      <span class="tech">HTML</span><span class="tech">CSS</span><span class="tech">JavaScript</span>
     </div>
     <div class="col">
-      <h2 class="portfolio-title">Bakerme</h2>
+      <h2 class="portfolio-title">BakerMe</h2>
       <div class="portfolio-info">
-        Bakerme is een bread on demand applicatie, gebaseerd op UberEats, TakeAway, ... De website is een prototype,
+        BakerMe is een bread on demand applicatie, gebaseerd op UberEats, TakeAway, ... De website is een prototype,
         volledig in HTML, CSS en Javascript geschreven.
+      </div>
+      <a [routerLink]="['/currently']">
+        <div class="portfolio-link">
+          Meer info &#10132;
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="portfolio-grid grid-images">
+    <div class="image-wrapper col">
+      <img src="assets/img/ScreenshotCurrently02.jpg" class="thumbnail">
+      <span class="tech">Typescript</span><span class="tech">.NET</span>
+    </div>
+    <div class="col col-left">
+      <h2 class="portfolio-title">KazouAPI</h2>
+      <div class="portfolio-info">
+        De KazouAPI handelt de vrijwilligersboekingen voor Kazou-vakanties af. De bestemmingen, profielen en
+        engagementen worden op een overzichtelijke plaats bijgehouden. Er wordt ook gebruik gemaakt van externe API's om
+        de gebruikservaring te optimaliseren.
       </div>
       <a [routerLink]="['/currently']">
         <div class="portfolio-link">
