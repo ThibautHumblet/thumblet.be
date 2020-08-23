@@ -4,14 +4,14 @@ h2 {
 }
 
 .thumbnail {
-    width: 100%;
+    max-width: 100%;
 }
 
 .tech {
     font-style: italic;
-    color: #333436;
+    color: #fff;
     border-style: solid;
-    background-color: #0DFCFA;
+    background-color: #007AFC;
     border-radius: 45px;
     padding: .4em;
     margin-right: .5vw;
@@ -103,14 +103,7 @@ a {
     text-decoration: none;
 }
 
-.image-wrapper {
-    background-image: url(https://assets.website-files.com/5d9ebe3…/5da9c34…_floating-preview.jpg);
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-@media (max-width: 999px) {
+@media (max-width: 500px) {
     .grid-flex {
       height: 40em;
       display: -webkit-flex;
