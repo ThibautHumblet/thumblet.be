@@ -27,8 +27,7 @@ h2 {
 }
 
 .thumbnail {
-    max-width: 100%;
-    margin-bottom: -1em;
+    width: 100%;
 }
 
 .project>p{
@@ -37,9 +36,9 @@ h2 {
 
 .tech {
     font-style: italic;
-    color: #060606;
+    color: #333436;
     border-style: solid;
-    background-color: #F87014;
+    background-color: #0DFCFA;
     border-radius: 45px;
     padding: .4em;
     margin-right: .5vw;
@@ -49,14 +48,82 @@ h2 {
     margin-left: -.2vw;
 }
 
-@media(min-width: 751px){
-    .portfolio{
-        grid-template-columns: repeat(2, 1fr);
+.grid-wrapper {
+    margin-top: 120px;
+}
+
+.portfolio-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+}
+
+.grid-images {
+    margin-bottom: 140px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-column-gap: 8em;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.portfolio-title {
+    font-family: Roboto, sans-serif;
+    color: #e3e7ee;
+    font-size: 32px;
+    line-height: 1.3em;
+    font-weight: 500;
+    max-width: 80%;
+    margin-bottom: 16px;
+    color: #485160;
+}
+
+.portfolio-info{
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    color: #8a989e;
+    font-size: 20px;
+    line-height: 1.8em;
+    font-weight: 400;
+}
+
+.portfolio-link {
+    margin-top: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: #007afc;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.image-wrapper {
+    background-image: url(https://assets.website-files.com/5d9ebe3…/5da9c34…_floating-preview.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 990px){
+    .portfolio-grid{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media(min-width: 1200px) {
-    .portfolio{
-        grid-template-columns: repeat(3, 1fr);
+@media(min-width: 991px){
+    .portfolio-grid{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
