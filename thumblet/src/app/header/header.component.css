@@ -2,7 +2,7 @@
 .navbar {
     min-height: 10vh;
     width: 100%;
-    background-color: #C6CFCE;
+    background-color: #007AFC;
     margin: 0px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
@@ -16,13 +16,13 @@
 .navbar>.navbar-header>.navbar-title {
     display: inline-block;
     vertical-align: middle;
-    color: #F87014;
+    color: #fff;
     font-family: 'Teko', sans-serif;
 }
 
 .navbar>.navbar-header>.navbar-title>a {
     text-decoration: none;
-    color: #DC2500;
+    color: #fff;
     font-family: 'Teko', sans-serif;
     font-size: 36px;
 }
@@ -46,8 +46,8 @@
 }
 
 .navbar>.navbar-links>a:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #C6CFCE;
+    background-color: #0055B0;
+    color: #0DFCFA;
     cursor: pointer;
 }
 
