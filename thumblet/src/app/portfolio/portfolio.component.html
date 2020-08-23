@@ -8,7 +8,11 @@
   <div class="grid-wrapper"></div>
 
   <div class="portfolio-grid grid-images">
-    <div>
+    <div class="image-wrapper col">
+      <img src="assets/img/ScreenshotCurrently01.jpg" class="thumbnail">
+      <span class="tech">Typescript</span><span class="tech">NodeJS</span><span class="tech">Python</span>
+    </div>
+    <div class="col col-left">
       <h2 class="portfolio-title">Currently</h2>
       <div class="portfolio-info">
         Currently is een all-in-one platform om het energieverbruik van ruimtes en apparaten te weten te komen. Ook
@@ -16,22 +20,18 @@
       </div>
       <a [routerLink]="['/currently']">
         <div class="portfolio-link">
-          Meer info
+          Meer info &#10132;
         </div>
       </a>
-    </div>
-    <div class="image-wrapper">
-      <img src="assets/img/ScreenshotCurrently01.jpg" class="thumbnail">
-      <span class="tech">Typescript</span><span class="tech">NodeJS</span><span class="tech">Python</span>
     </div>
   </div>
 
   <div class="portfolio-grid grid-images">
-    <div class="image-wrapper">
+    <div class="image-wrapper col">
       <img src="assets/img/ScreenshotCurrently01.jpg" class="thumbnail">
       <span class="tech">Typescript</span><span class="tech">NodeJS</span><span class="tech">Python</span>
     </div>
-    <div>
+    <div class="col">
       <h2 class="portfolio-title">Bakerme</h2>
       <div class="portfolio-info">
         Bakerme is een bread on demand applicatie, gebaseerd op UberEats, TakeAway, ... De website is een prototype,
@@ -39,7 +39,7 @@
       </div>
       <a [routerLink]="['/currently']">
         <div class="portfolio-link">
-          Meer info
+          Meer info &#10132;
         </div>
       </a>
     </div>

@@ -3,35 +3,8 @@ h2 {
     margin-top: 1vh;
 }
 
-.portfolio {
-    display: grid;
-    grid-area: portfolio;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1em;
-}
-
-.project {
-    width: auto;
-    height: 100%;
-    background-color: #C6CFCE;
-    box-shadow: #060606;
-    border-radius: 20px;
-    padding-top: .4em;
-    padding-left: .4em;
-    padding-right: .4em;
-    cursor: pointer;
-}
-
-.project:active{
-    border-color: #F87014;
-}
-
 .thumbnail {
     width: 100%;
-}
-
-.project>p{
-    margin-top: 1em;
 }
 
 .tech {
@@ -53,16 +26,33 @@ h2 {
 }
 
 .portfolio-grid {
-    display: -ms-grid;
-    display: grid;
-    grid-auto-columns: 1fr;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
-    grid-row-gap: 16px;
-    grid-column-gap: 16px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    flex-direction: row; 
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: space-around;
 }
+
+.col {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .col-left {
+    -webkit-box-ordinal-group:-1;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+  }
 
 .grid-images {
     margin-bottom: 140px;
@@ -116,14 +106,23 @@ h2 {
     background-repeat: no-repeat;
 }
 
-@media(max-width: 990px){
-    .portfolio-grid{
-        grid-template-columns: repeat(1, 1fr);
+@media (max-width: 999px) {
+    .grid-flex {
+      height: 40em;
+      display: -webkit-flex;
+      -webkit-flex-direction: column;
+      flex-direction: column; 
+     }
+    .col {
+      order:vertical;
     }
-}
-
-@media(min-width: 991px){
-    .portfolio-grid{
-        grid-template-columns: repeat(2, 1fr);
+    .col-left {
+      -webkit-box-ordinal-group:0;
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+    }
+    .portfolio-title {
+        margin-top: 20px;
     }
 }
