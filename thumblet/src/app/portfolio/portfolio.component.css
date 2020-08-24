@@ -1,0 +1,144 @@
+h2 {
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+}
+
+.thumbnail {
+    max-width: 100%;
+}
+
+.tech {
+    font-style: italic;
+    color: #fff;
+    border-style: solid;
+    background-color: #007AFC;
+    border-radius: 45px;
+    padding: .4em;
+    margin-right: .5vw;
+}
+
+.tech:first-of-type {
+    margin-left: -.2vw;
+}
+
+.grid-wrapper {
+    margin-top: 90px;
+}
+
+.portfolio-grid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    flex-direction: row; 
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.col {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .col-left {
+    -webkit-box-ordinal-group:-1;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
+.grid-images {
+    margin-bottom: 140px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-column-gap: 8em;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.portfolio-title {
+    font-family: Roboto, sans-serif;
+    color: #e3e7ee;
+    font-size: 32px;
+    line-height: 1.3em;
+    font-weight: 500;
+    max-width: 80%;
+    margin-bottom: 16px;
+    color: #485160;
+}
+
+.portfolio-info{
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    color: #8a989e;
+    font-size: 20px;
+    line-height: 1.8em;
+    font-weight: 400;
+}
+
+.portfolio-link {
+    margin-top: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: #007afc;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #007afc;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .grid-flex {
+      height: 40em;
+      display: -webkit-flex;
+      -webkit-flex-direction: column;
+      flex-direction: column; 
+     }
+    .col {
+      order:vertical;
+    }
+    .col-left {
+      -webkit-box-ordinal-group:0;
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+    }
+    .portfolio-title {
+        margin-top: 20px;
+    }
+}

@@ -12,6 +12,12 @@ import { ContactComponent } from './contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MglTimelineModule } from 'angular-mgl-timeline';
 import { FormsModule }   from '@angular/forms';
+import { CurrentlyComponent } from './currently/currently.component';
+import { BakermeComponent } from './bakerme/bakerme.component';
+import { KazouapiComponent } from './kazouapi/kazouapi.component';
+import { HapComponent } from './hap/hap.component';
+import { MonogamedinoComponent } from './monogamedino/monogamedino.component';
+import { UnityzombieComponent } from './unityzombie/unityzombie.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,13 @@ import { FormsModule }   from '@angular/forms';
     IndexComponent,
     PortfolioComponent,
     AboutmeComponent,
-    ContactComponent
+    ContactComponent,
+    CurrentlyComponent,
+    BakermeComponent,
+    KazouapiComponent,
+    HapComponent,
+    MonogamedinoComponent,
+    UnityzombieComponent
   ],
   imports: [
     BrowserModule,
