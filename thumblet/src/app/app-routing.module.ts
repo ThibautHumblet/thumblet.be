@@ -10,6 +10,8 @@ import { KazouapiComponent } from './kazouapi/kazouapi.component';
 import { HapComponent } from './hap/hap.component';
 import { MonogamedinoComponent } from './monogamedino/monogamedino.component';
 import { UnityzombieComponent } from './unityzombie/unityzombie.component';
+import { BurrowComponent } from './burrow/burrow.component';
+import { KazousiteComponent } from './kazousite/kazousite.component';
 
 
 const routes: Routes = [
@@ -57,7 +59,15 @@ const routes: Routes = [
   {
     path: 'unityzombie',
     component: UnityzombieComponent
-  }
+  },
+  {
+    path: 'burrow',
+    component: BurrowComponent
+  },
+  {
+    path: 'kazousite',
+    component: KazousiteComponent
+  },
 ];
 
 @NgModule({

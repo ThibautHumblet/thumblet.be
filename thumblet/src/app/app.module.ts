@@ -18,6 +18,8 @@ import { KazouapiComponent } from './kazouapi/kazouapi.component';
 import { HapComponent } from './hap/hap.component';
 import { MonogamedinoComponent } from './monogamedino/monogamedino.component';
 import { UnityzombieComponent } from './unityzombie/unityzombie.component';
+import { BurrowComponent } from './burrow/burrow.component';
+import { KazousiteComponent } from './kazousite/kazousite.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { UnityzombieComponent } from './unityzombie/unityzombie.component';
     KazouapiComponent,
     HapComponent,
     MonogamedinoComponent,
-    UnityzombieComponent
+    UnityzombieComponent,
+    BurrowComponent,
+    KazousiteComponent
   ],
   imports: [
     BrowserModule,
