@@ -141,6 +141,10 @@ table {
   margin-right: 5vw;
 }
 
+iframe {
+  margin-top: 5vh;
+}
+
 @media(min-width: 751px) {
   .content {
     margin-left: 20vw;
