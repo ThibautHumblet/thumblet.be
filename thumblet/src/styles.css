@@ -136,7 +136,6 @@ table {
 }
 
 .content {
-  margin-top: 5vh;
   margin-left: 5vw;
   margin-right: 5vw;
 }
@@ -154,7 +153,7 @@ iframe {
 
 h1 {
   font-size: xx-large;
-  margin-top: 8vh;
+  margin-top: 5vh;
   margin-bottom: 5vh;
   color: #485160;
 }
