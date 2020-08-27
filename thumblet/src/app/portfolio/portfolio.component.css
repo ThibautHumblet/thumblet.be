@@ -15,6 +15,7 @@ h2 {
     border-radius: 45px;
     padding: .4em;
     margin-right: .5vw;
+    margin-bottom: 10vh;
 }
 
 .tech:first-of-type {
@@ -112,6 +113,7 @@ a:after {
     background: #007afc;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
+    bottom: -20px;
   }
   a:hover:after { 
     width: 100%; 
