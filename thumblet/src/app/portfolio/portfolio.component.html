@@ -1,10 +1,11 @@
 <div class="content">
   <h1>Portfolio</h1>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias laboriosam esse laborum totam sint omnis magni
-    dolor explicabo repudiandae natus.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, natus repellat ullam, quaerat deleniti,
-    cupiditate repudiandae distinctio soluta nihil adipisci a placeat fuga aspernatur hic. Perferendis architecto at
-    aliquid unde!</p>
+  <p>Welkom in mijn persoonlijk portfolio. Hier zijn enkele projecten te vinden die ik de afgelopen jaren heb gemaakt.
+    Sommige projecten waren ontwikkeld als opdracht voor school, andere projecten zijn uit persoonlijke interesse ontwikkeld.</p>
+  <p>Bij elk project is een beetje uitleg en zijn enkele screenshots te vinden. In sommige gevallen heb ik ook
+    documentatie of zelfs code snippets toegevoegd. Het merendeel van mijn projecten is ook terug te vinden onder mijn
+    Github account. Indien u vragen hebt over een specifiek project, aarzel dan niet om mij te contacteren. Veel
+    kijkplezier!</p>
 
   <div class="grid-wrapper"></div>
 
@@ -35,7 +36,7 @@
     <div class="col">
       <h2 class="portfolio-title">BakerMe</h2>
       <div class="portfolio-info">
-        BakerMe is een bread on demand applicatie, gebaseerd op UberEats, TakeAway, ... De website is een prototype,
+        BakerMe is een bread-on-demand applicatie, gebaseerd op UberEats, TakeAway, ... De website is een prototype,
         volledig in HTML, CSS en Javascript geschreven.
       </div>
       <a [routerLink]="['/currently']">
@@ -87,28 +88,83 @@
     </div>
   </div>
 
-  <!--   <div class="portfolio">
-    <div class="project" [routerLink]="['/currently']">
-      <h2>Currently.be</h2>
-      <img src="assets/img/ScreenshotCurrently01.jpg" class="thumbnail">
-      <span class="tech">Typescript</span><span class="tech">NodeJS</span><span class="tech">Python</span>
-      <p>Currently is een all-in-one platform om het energieverbruik van ruimtes en apparaten te weten te komen. Ook
-        toekomstig verbruik en optimalisatie-algoritmen werden toegepast.</p>
+  <div class="portfolio-grid grid-images">
+    <div class="image-wrapper col">
+      <img src="assets/img/ScreenshotCurrently02.jpg" class="thumbnail">
+      <span class="tech">Monogame</span><span class="tech">C#</span>
     </div>
-    <div class="project" [routerLink]="['/bakerme']">
-      <h2>BakerMe</h2>
+    <div class="col col-left">
+      <h2 class="portfolio-title">Monogame: Dino platformer</h2>
+      <div class="portfolio-info">
+        Monogame is een C# framework waar men games kan ontwikkelen. Ik heb een Dino platforming game geschreven,
+        volledig volgens de SOLID principes. Het doel van het spel is om de diamant op het einde van het level te pakken
+        te krijgen.
+      </div>
+      <a [routerLink]="['/currently']">
+        <div class="portfolio-link">
+          Meer info &#10132;
+        </div>
+      </a>
     </div>
-    <div class="project" [routerLink]="['/kazouapi']">
-      <h2>KazouAPI</h2>
+  </div>
+
+  <div class="portfolio-grid grid-images">
+    <div class="image-wrapper col">
+      <img src="assets/img/ScreenshotCurrently04.jpg" class="thumbnail">
+      <span class="tech">Unity</span><span class="tech">C#</span>
     </div>
-    <div class="project" [routerLink]="['/hap']">
-      <h2>HAP</h2>
+    <div class="col">
+      <h2 class="portfolio-title">Unity3D: FPS zombie game</h2>
+      <div class="portfolio-info">
+        Voor het vak 3D game programming heb ik een first person shooter horror experience gemaakt. De game is
+        onderverdeeld in twee verschillende levels; een klassieke 'survival' en een 'search and destroy', waar een
+        speler zo snel mogelijk een standbeeld in een donker bos moet zoeken én vernietigen.
+      </div>
+      <a [routerLink]="['/currently']">
+        <div class="portfolio-link">
+          Meer info &#10132;
+        </div>
+      </a>
     </div>
-    <div class="project" [routerLink]="['/monogamedino']">
-      <h2>Monogame: Dino platformer</h2>
+  </div>
+
+  <div class="portfolio-grid grid-images">
+    <div class="image-wrapper col">
+      <img src="assets/img/ScreenshotCurrently02.jpg" class="thumbnail">
+      <span class="tech">Java</span>
     </div>
-    <div class="project" [routerLink]="['/unityzombie']">
-      <h2>Unity3d: Zombie Survival + S&D</h2>
+    <div class="col col-left">
+      <h2 class="portfolio-title">Burrow</h2>
+      <div class="portfolio-info">
+        Burrow is een prototype voor een Android applicatie waar gebruikers coupons in kunnen bijhouden. Wanneer de
+        coupon bijna dreigt te vervallen, wordt de gebruiker gewaarschuwd met een melding.
+      </div>
+      <a [routerLink]="['/currently']">
+        <div class="portfolio-link">
+          Meer info &#10132;
+        </div>
+      </a>
     </div>
-  </div> -->
+  </div>
+
+  <div class="portfolio-grid grid-images">
+    <div class="image-wrapper col">
+      <img src="assets/img/ScreenshotCurrently04.jpg" class="thumbnail">
+      <span class="tech">Typescript</span><span class="tech">HTML</span><span class="tech">CSS</span>
+    </div>
+    <div class="col">
+      <h2 class="portfolio-title">Vrijwilligerswebsite KazouRMT</h2>
+      <div class="portfolio-info">
+        De vrijwilligerswebsite van Kazou RMT is in een nieuw jasje gestoken. In de nieuwe versie kunnen gebruikers snel
+        en eenvoudig kijken welke activiteiten er in de nabije toekomst zijn. Daarnaast zijn er nog een hele hoop
+        handige snufjes toegevoegd.
+      </div>
+      <a [routerLink]="['/currently']">
+        <div class="portfolio-link">
+          Meer info &#10132;
+        </div>
+      </a>
+    </div>
+  </div>
+
 </div>
