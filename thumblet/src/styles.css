@@ -144,6 +144,10 @@ iframe {
   margin-top: 5vh;
 }
 
+html {
+  height: 100%;
+}
+
 @media(min-width: 751px) {
   .content {
     margin-left: 20vw;

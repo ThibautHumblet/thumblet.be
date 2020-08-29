@@ -1,21 +1,111 @@
+.index-background {
+  background-color: #1988FF;
+  background: linear-gradient(120deg, rgba(0,85,176,69) 0%, rgba(0,122,252,99) 55%, rgba(25,136,255,100) 100%);
+}
+
 .profile {
-    border-width: .2px;
-    border-radius: 1em;
-    padding: .7vw;
-    background-color: #333436;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  border-width: .2px;
+  border-radius: 1em;
+  padding: .7vw;
+  background-color: #333436;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .profilepic {
-    max-width: 7vw;
-    max-height: 7vh;
-    border-radius: 45px;
+  max-width: 7vw;
+  max-height: 7vh;
+  border-radius: 45px;
 
 }
 
 .profileInfo {
-margin-left: 1.5vw;
-color: #C6CFCE;
+  margin-left: 1.5vw;
+  color: #C6CFCE;
+}
+
+.index {
+  display: grid;
+  place-items: center start;
+  height: 90vh !important;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+h2 {
+  font: bold 300% Consolas, Monaco, monospace;
+  color: #fff;
+  border-right: .1em solid #fff;
+  width: 16.5em;
+  width: 25ch;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 7s steps(25, end),
+    blink-caret .5s step-end infinite alternate;
+  animation: typing 7s steps(25, end),
+    blink-caret .5s step-end infinite alternate;
+  font-size: 20px;
+}
+
+.btn {
+  background-color: #1988FF;
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: large;
+  height: 7vh;
+  width: fit-content;
+  padding: 0em 2rem;
+  transition: background-color .9s ease, color 1s ease;
+  margin-top: 10vh;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #1988FF;
+}
+
+.btn:focus {
+  border: 0;
+  outline: none;
+}
+
+@media(min-width: 751px) {
+  h1 {
+    font-size: 115px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
 }
