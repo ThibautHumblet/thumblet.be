@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { async } from '@angular/core/testing';
+import { Component, OnInit, Inject } from '@angular/core';
+import { async, inject } from '@angular/core/testing';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -7,8 +8,9 @@ import { async } from '@angular/core/testing';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  constructor(@Inject(DOCUMENT) document) { 
+    document.getElementById('navbar-check')
+  }
 
   ngOnInit() {
   }
@@ -39,5 +41,9 @@ export class HeaderComponent implements OnInit {
       let element = items[i];
       element.style.margin = "0 4vw 0 0"
     }
+  }
+
+  close() {
+    (document.getElementById('navbar-check') as HTMLFormElement).checked = false;
   }
 }

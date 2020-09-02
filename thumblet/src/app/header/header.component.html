@@ -13,9 +13,9 @@
     </div>
     <input type="checkbox" id="navbar-check">
     <div class="navbar-links">
-      <a [routerLink]="['/index']">HOME</a>
-      <a [routerLink]="['/portfolio']">PORTFOLIO</a>
-      <a [routerLink]="['/aboutme']">OVER MIJ</a>
-      <a [routerLink]="['/contact']">CONTACT</a>
+      <a [routerLink]="['/index']" (click)="close()">HOME</a>
+      <a [routerLink]="['/portfolio']" (click)="close()">PORTFOLIO</a>
+      <a [routerLink]="['/aboutme']" (click)="close()">OVER MIJ</a>
+      <a [routerLink]="['/contact']" (click)="close()">CONTACT</a>
     </div>
   </div>
