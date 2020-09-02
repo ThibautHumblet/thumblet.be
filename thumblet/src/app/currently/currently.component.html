@@ -2,8 +2,81 @@
   <div class="title" [routerLink]="['/portfolio']">
     <h1>&#10094; Currently</h1>
   </div>
-  <h2>"Taking back control over your electronic devices"</h2>
-  <p class="titletext">Een all-in-one project, zowel hardware als software. Databases, microcotrollers, meerdere programmeertalen, optimalisatie-algoritmen en nog veel meer. Welkom bij Currently!</p>
+  <h2>Taking back control over your electronic devices</h2>
+  <p class="titletext">Een all-in-one project, zowel hardware als software. Databases, microcotrollers, meerdere
+    programmeertalen, Json-webtokens, optimalisatie-algoritmen en nog veel meer. Welkom bij Currently!</p>
+  <div class="logo-box">
+    <img alt="Logo van Currently" src="assets/img/ScreenshotCurrently08.png">
+  </div>
   <h3>Wat is Currently?</h3>
-  <p>Currently is een digitaal platform ontworpen om een beter overzicht te krijgen in wat een elektronisch toestel verbruikt. Tegenwoordig pluggen we apparaten in, zonder er bij stil te staan hoeveel energie we eigenlijk 'verspillen'. Dankzij de slimme meters van Currently en een gebruiksvriendelijk platform, is het ontzettend eenvoudig om hier het overzicht over te krijgen</p>
+  <p>Currently is een digitaal platform ontworpen om een beter overzicht te krijgen in wat een elektronisch toestel
+    verbruikt. Tegenwoordig pluggen we apparaten in, zonder er bij stil te staan hoeveel energie we eigenlijk
+    'verspillen'. Dankzij de slimme meters van Currently en een gebruiksvriendelijk platform, is het ontzettend
+    eenvoudig om hier het overzicht over te krijgen.</p>
+  <img class="photo-large" alt="Schermafdruk hoofdpagina currently" src="assets/img/ScreenshotCurrently01.jpg">
+  <h3>Currently, meer dan een lijst met apparaten</h3>
+  <p>Een gebruiker kan snel en eenvoudig het actuele verbruik van zijn apparaat kennen. Elk toestel wordt op voorhand in
+    de database opgeslagen met daarbij de nodige info (naam, merk, verbruik, ...). Daarna kan men kiezen of men het
+    toestel koppelt met de Currently adapter of niet. Niet elk toestel moet aan een adapter hangen om aan het platform
+    toe te voegen. Men is vrij om dat te kiezen. </p>
+  <p>
+    Wanneer een gebruiker zijn apparaat wil opzoeken, heeft hij twee opties.
+  </p>
+  <ul>
+    <li>
+      De QR-code aan het toestel wordt gescand. Hiermee wordt er automatisch naar het desbetreffende toestel
+      genavigeerd. Wanneer de QR-code niet gescand kan worden, kan er ook op het unieke apparaat-id gezocht worden.
+    </li>
+    <li>
+      De gebruiker zoek in de tabel "apparaten" naar het toestel waar hij meer informatie over wil ontvangen.
+    </li>
+  </ul>
+  <div class="image-box">
+    <img class="image-box-two" alt="Een screenshot van een apparaat in meer detail"
+      src="assets/img/ScreenshotCurrently02.jpg">
+    <img class="image-box-two" alt="Een screenshot de lijst van apparaten" src="assets/img/ScreenshotCurrently06.jpg">
+  </div>
+  <p>In het overzicht van het toestel wordt alle informatie overzichtelijk weergegeven. Is het apparaat gekoppeld aan
+    een adapter? Dan wordt ook de grafiek van het real-time verbruik weergegeven. Ook de QR-code die bij het apparaat
+    hoort, wordt getoond zodat de gebruiker deze kan opslaan en/of afdrukken.</p>
+  <p>
+    Het toevoegen, aanpassen en verwijderen van apparaten gebeurd heel intuïtief. Een modal verschijnt wanneer een
+    gebruiker één van deze zaken wil doen. De requests worden op een veilige manier met behulp van JWT (JSON Web Token)
+    naar de server verstuurd. Alles gebeurt via API calls naar een uitgebreide en veilige NodeJS API.
+  </p>
+  <h3>Meten is weten</h3>
+  <p>Zoals al eerder aangehaald, werden voor Currently speciale adapters gemaakt. Deze zijn gemaakt van een NodeMCU
+    ESP8266 met
+    een ACS712 AC stroomsensor. Ook werd er een NodeMCU ESP8266 met een YHDC SCT013 CT-sensor ontwikkeld. Deze kan het
+    verbruik over de kabel meten en is handig in een meterkast waar je niet zomaar aanpassingen mag doen. Deze metrics
+    worden geëncrypteerd verzonden naar de backend server. Dit alles gebeurt met een C script. De meters beschikken ook
+    over een relay, zodat je vanop het Currently platform handmatig de stroom kan onderbreken.</p>
+  <p>Als afwerking werden de adapters in een doosje gestoken, voorzien van het Currently logo. Naast de veiligheid, is
+    dit ook een esthetische keuze.</p>
+  <img class="photo-large" alt="De adapters van currently" src="assets/img/ScreenshotCurrently07.jpg">
+  <p>Naast de data die we zelf genereren, halen we met Currently ook data van de FTP server van AP Hogeshool Antwerpen,
+    campus Ellermansstraat. Deze data is onder andere data uit de lokalen (temperatuur, luchtgroepen, ...). Daarnaast
+    heeft de provincie Antwerpen ook een weerstation op het dak van de hogeschool geplaatst. Ook deze data wordt
+    uitgelezen.</p>
+  <p>Om deze data te bemachtigen, werden er enkele webscrapers geschreven in bash. Deze gaan inloggen op de FTP server,
+    de metrics ophalen en ten slotte naar de database sturen. Alles zit verpakt in een alpine-based docker container,
+    die deze elke nacht automatisch gaat ophalen.</p>
+  <img class="photo-large" alt="Een screenshot van de data van het weerstation"
+    src="assets/img/ScreenshotCurrently05.jpg">
+  <h3>Anomaliën en inschattingen</h3>
+  <p>De gebruikers kunnen met Currently ook aan anomaliedetectie en berekeningen van het toekomstig verbruik doen. Op
+    basis van historische data wordt een voorspelling gemaakt van het verbruik dat in de toekomst zal plaatsvinden. Er
+    is gekozen om dit met de data van het vaklokaal Electronica-ICT te doen. Omdat deze screenshot genomen werd toen er
+    gedurende een hele tijd geen activiteit plaats vond op de campus (tijdens lockdown coronavirus 2020), zijn de lijnen
+    van de voorspelling niet helemaal interessant. Het script werd geschreven in python. De historische data wordt
+    genomen en na een berekening wordt deze data in een nieuwe grafiek geplot. </p>
+  <div class="image-box">
+    <img class="image-box-two" alt="Een screenshot van het toekomstig verbruik"
+      src="assets/img/ScreenshotCurrently04.jpg">
+    <img class="image-box-two" alt="Een screenshot de anomalie detectie" src="assets/img/ScreenshotCurrently03.jpg">
+  </div>
+  <p>De gebruiker kan via het Currently platform zelf triggers instellen die anomaliën opleveren (bv. een lamp die
+    brandt tussen 23u00 en 5u00, een apparaat dat langer dan 2 minuten een stroompiek krijgt, ...). Wanneer een trigger
+    plaatsvindt, wordt de gebruiker hiervan met een push melding op de hoogte gebracht. Een pythonscript zal elke minuut
+    controleren of een trigger bereikt werd.</p>
 </div>
