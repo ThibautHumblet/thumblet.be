@@ -148,6 +148,10 @@ html {
   height: 100%;
 }
 
+.title {
+  margin-top: 5vh;
+}
+
 @media(min-width: 751px) {
   .content {
     margin-left: 20vw;
