@@ -108,7 +108,7 @@ section {
 }
 
 body {
-  line-height: 1;
+  line-height: normal;
   background-color: #ffffff;
 }
 
@@ -150,6 +150,13 @@ html {
 
 .title {
   margin-top: 5vh;
+  margin-bottom: 16px;
+}
+
+ul, li {
+  list-style: square;
+  margin-left: 1em;
+  margin-bottom: 2vh;
 }
 
 @media(min-width: 751px) {
@@ -166,7 +173,7 @@ h1 {
   color: #485160;
 }
 
-p {
+p, ul {
   color: #485160;
   font-family: sans-serif;
   font-size: 18px;
