@@ -15,6 +15,15 @@ p {
   margin-bottom: 3vh;
 }
 
+.title:focus {
+  border: 0;
+  outline: none;
+}
+
+h1:hover {
+  color: #777;
+}
+
 .titletext {
   font-family: sans-serif;
   color: #555;
@@ -41,6 +50,42 @@ p {
   max-width: 100%;
   margin-bottom: 3vh;
 }
+
+.learn-more {
+  padding: 4em 2em 4em 5em;
+  margin: 5vh -5vw 0 -5vw;
+  background-color: #007AFC;
+  width: fit-content;
+}
+
+.learn-more p, .learn-more h3 {
+  color: #fff
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: large;
+  height: 5vh;
+  width: fit-content;
+  padding: 0em 2rem;
+  transition: background-color .9s ease, color 1s ease;
+  margin-top: 1vh;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #007AFC;
+  background-color: #fff;
+}
+
+.btn:focus {
+  border: 0;
+  outline: none;
+}
+
 
 @media (min-width: 901px) {
   h2 {
@@ -78,6 +123,10 @@ p {
     padding: 5px;
     width: 45%;
     margin-bottom: 0;
+  }
+  
+  .learn-more {
+    margin: 7vh 0 7vh 0;
   }
 }
 
