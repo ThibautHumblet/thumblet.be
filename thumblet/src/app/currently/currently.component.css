@@ -1,0 +1,43 @@
+h2 {
+  font-size: 40px;
+  color: #333;
+  font-family: sans-serif;
+  margin-bottom: 3vh;
+}
+
+h3 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 1vh;
+}
+
+.titletext {
+  margin-bottom: 5vh;
+  font-family: sans-serif;
+  color: #555;
+  font-size: 25px;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+
+@media (min-width: 901px) {
+  h2 {
+    max-width: 85%;
+    font-size: 60px;
+  }
+
+  .titletext {
+    font-size: 30px;
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1100px) {
+  h2 {
+    max-width: 65%;
+  }
+
+  .titletext {
+    max-width: 70%;
+  }
+}
