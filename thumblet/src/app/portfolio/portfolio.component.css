@@ -4,7 +4,7 @@ h2 {
 }
 
 .thumbnail {
-    max-width: 100%;
+    width: 95vw;
 }
 
 .tech {
@@ -124,9 +124,9 @@ a {
     text-decoration: none;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 750px){
     .thumbnail{
-        max-width: 85vw;
+        width: 65vw;
     }
 }
 
@@ -149,8 +149,10 @@ a {
     .portfolio-title {
         margin-top: 20px;
     }
+}
 
-    .thumbnail{
-        max-width: 65vw;
+@media (min-width: 1001px) {
+    .thumbnail {
+max-width: 100%;
     }
 }
