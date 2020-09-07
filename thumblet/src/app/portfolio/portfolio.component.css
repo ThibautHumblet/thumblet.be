@@ -4,7 +4,7 @@ h2 {
 }
 
 .thumbnail {
-    max-width: 100%;
+    width: 95vw;
 }
 
 .tech {
@@ -13,13 +13,13 @@ h2 {
     border-style: solid;
     background-color: #007AFC;
     border-radius: 45px;
-    padding: .4em;
+    padding: .7em;
     margin-right: .5vw;
     margin-bottom: 10vh;
 }
 
 .tech:first-of-type {
-    margin-left: -.2vw;
+    margin-left: -.8vw;
 }
 
 .grid-wrapper {
@@ -124,7 +124,13 @@ a {
     text-decoration: none;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 750px){
+    .thumbnail{
+        width: 65vw;
+    }
+}
+
+@media (max-width: 1000px) {
     .grid-flex {
       height: 40em;
       display: -webkit-flex;
@@ -142,5 +148,11 @@ a {
     }
     .portfolio-title {
         margin-top: 20px;
+    }
+}
+
+@media (min-width: 1001px) {
+    .thumbnail {
+max-width: 100%;
     }
 }

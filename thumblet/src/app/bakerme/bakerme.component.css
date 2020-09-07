@@ -1,0 +1,10 @@
+.screenshotmobile {
+max-width: 100% !important;
+}
+
+@media (min-width:900px){
+    .screenshotmobile {
+        max-height: 50vh;
+        width: auto !important;
+    }
+}
