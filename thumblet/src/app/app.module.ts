@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { LocationStrategy, Location, PathLocationStrategy } from '@angular/common';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -11,7 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MglTimelineModule } from 'angular-mgl-timeline';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { CurrentlyComponent } from './currently/currently.component';
 import { BakermeComponent } from './bakerme/bakerme.component';
 import { KazouapiComponent } from './kazouapi/kazouapi.component';
@@ -45,7 +47,7 @@ import { KazousiteComponent } from './kazousite/kazousite.component';
     MglTimelineModule,
     FormsModule
   ],
-  providers: [],
+  providers: [Location, { provide: LocationStrategy, useClass: PathLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
