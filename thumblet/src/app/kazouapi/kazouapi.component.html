@@ -2,5 +2,47 @@
   <div class="title" [routerLink]="['/portfolio']">
     <h1>&#10094; Kazou API</h1>
   </div>
-  <iframe src="https://giphy.com/embed/fUYp0iOzQfC540KCs4" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ginamo-real-estate-realtor-coming-soon-fUYp0iOzQfC540KCs4">via GIPHY</a></p>
+  <h2>Assigning volunteers and vacations in one platform (POC)</h2>
+  <p class="titletext">De Kazou API is een proof-of-concept platform en API die het boekingssysteem van de vrijwilligers
+    van Kazou vzw schetst. Ook wordt er gebruik gemaakt van login authenticatie door middel van OAuth-based Google
+    Sign-in. </p>
+  <p>De API die werd volgens de REST-filosofie geschreven. Als technologie voor dit project werd, een
+    backend, geschreven in .NET MVC, met Angular als frontend technologie, gebruikt.</p>
+  <h3>CRUD</h3>
+  <img class="photo-large" alt="Schermafdruk vakantiepagina" src="assets/img/ScreenshotKazouApi01.png">
+  <p>Zoals elke REST API beschikt de Kazou API over alle CRUD (Create, Read, Update en Delete) operaties. Ook werd de
+    API beveiligd tegen foutieve invoer zodat deze robuust is. Bij enkele pagina's is het mogelijk om op extra criteria
+    te zoeken, filteren, aantal items per pagina te kiezen, ...</p>
+  <h3>Google login</h3>
+
+  <p>Gebruikers kunnen met hun Google account inloggen op het platform. Een ingelogde gebruiker kan meer pagina's
+    bezoeken dan een gebruiker die niét ingelogd is. Om aan te tonen dat de Google Auth werkt, wordt de profielfoto en
+    de gebruikersnaam opgehaald. Deze gebruikersnaam en profielfoto worden ook in de header getoond. Ook kan de
+    gebruiker zijn unieke token-ID opvragen om te bekijken als verificatie.</p>
+  <div class="image-box">
+    <img class="image-box-two" alt="Een screenshot van de inlogpagina waar de gebruiker niet ingelogd is"
+      src="assets/img/ScreenshotKazouApi03.png">
+    <img class="image-box-two" alt="Een screenshot van de inlogpagina waar de gebruiker wel ingelogd is"
+      src="assets/img/ScreenshotKazouApi04.png">
+  </div>
+  <p>Pagina's die niet bezocht kunnen worden wanneer de gebruiker niet ingelogd is, worden beveiligd door middel van een
+    RouterGuard. Als een gebruiker klaar is met het platform te bezoeken, kan deze uitloggen op de profielpagina.</p>
+  <h3>Externe API</h3>
+  <img class="photo-large" alt="Schermafdruk bestemmingenpagina" src="assets/img/ScreenshotKazouApi02.png">
+  <p>Om de Kazou API extra flair te geven, werd een externe API toegevoegd. Bezoekers kunnen in de pagina
+    'vakantiebestemmingen' een weerbericht van de locatie in kwestie te zien krijgen. Naast de (gevoels)temperatuur
+    wordt ook de beschrijving van het weer met illustratie getoond.</p>
+  <div class="learn-more">
+    <h3>Wil je meer info over de Kazou API?</h3>
+    <p>Uitzoeken hoe een REST API nu precies werkt? <br> Wil je zien hoe de koppeling tussen een API en een frontend
+      applicatie nu precies in elkaar zit?</p>
+    <button [routerLink]="'/contact'" class="btn">Contact
+      &#10095;</button>
+    <a href="https://github.com/ThibautHumblet/KazouAPI" target="_blank">
+      <button class="btn">Bezoek mijn Github
+        &#10095;</button>
+    </a>
+  </div>
+  <p class="note">Noot: de Kazou API is een proof-of-concept van hoe een soortgelijk platform er zou uit kunnen zien. De Kazou API is
+    allesbehalve geoptimaliseerd voor gebruik op grote schaal, aangezien dit niet de scope van dit project is.</p>
 </div>

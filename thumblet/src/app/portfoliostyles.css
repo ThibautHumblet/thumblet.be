@@ -87,6 +87,10 @@ h2 {
     outline: none;
   }
   
+  .note {
+    font-style: italic;
+    padding-top: .5vh;
+  }
   
   @media (min-width: 901px) {
     h2 {
