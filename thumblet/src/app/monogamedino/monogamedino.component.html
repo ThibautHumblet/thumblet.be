@@ -2,5 +2,40 @@
   <div class="title" [routerLink]="['/portfolio']">
     <h1>&#10094; Monogame: Dino Platformer</h1>
   </div>
-  <iframe src="https://giphy.com/embed/fUYp0iOzQfC540KCs4" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ginamo-real-estate-realtor-coming-soon-fUYp0iOzQfC540KCs4">via GIPHY</a></p>
+  <h2>Avonturen in MonoGame</h2>
+  <p class="titletext">Deze game werd volledig in C# geschreven, zonder enige library (met uitzondering van het MonoGame framework). Daarnaast lag de focus op alle SOLID principes.</p>
+  <img class="photo-large" alt="Schermafdruk hoofdscherm dino game" src="assets/img/ScreenshotDino01.jpg">
+  <h3>SOLID</h3>
+  <p>SOLID is een programmeerfilosofie die ervoor zorgt dat object oriented programming op een correcte manier gebeurt. Dit vijf-letterwoord staat voor;</p>
+  <ul>
+    <li>
+      <strong>S</strong>ingle responsibility principle: Een klasse heeft slechts 1 bestaandsreden en kan maar 1 reden hebben om te veranderen
+    </li>
+    <li>
+      <strong>O</strong>pen-closed Principe: klassen of functies moeten open zijn voor uitbreiding, maar gesloten voor wijzigingen
+    </li>
+    <li>
+      <strong>L</strong>iskov Substitution Design Principle: Subtypes moeten vervangbaar zijn door hun super types (parent class).
+    </li>
+    <li>
+      <strong>I</strong>nterface Segregation Principle: Client mogen niet afhankelijk zijn over interfaces die ze niet gebruiken
+    </li>
+    <li>
+      <strong>D</strong>ependency inversion principle: High level modules mogen niet afhankelijk zijn van low level modules. Ze mogen enkel afhankelijk zijn van
+      abstractie.
+    </li>
+  </ul>
+  <img class="photo-large" alt="Schermafdruk dinogame" src="assets/img/ScreenshotDino02.jpg">
+  <img class="photo-large" alt="Schermafdruk dinogame" src="assets/img/ScreenshotDino03.jpg">
+
+  <div class="learn-more">
+    <h3>De Dino Game uitproberen?</h3>
+    <p>Wil je graag leren programmeren in MonoGame? Wil je het spel zelf eens uitproberen? <br> Ik help je op weg!</p>
+    <button [routerLink]="'/contact'" class="btn">Contact
+      &#10095;</button>
+    <a href="https://github.com/ThibautHumblet/GameDevFinal" target="_blank">
+      <button class="btn">Bezoek mijn Github
+        &#10095;</button>
+    </a>
+  </div>
 </div>
