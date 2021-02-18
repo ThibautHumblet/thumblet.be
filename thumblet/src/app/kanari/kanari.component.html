@@ -1,1 +1,306 @@
-<p>kanari works!</p>
+<div class="content">
+  <div class="title" [routerLink]="['/portfolio']">
+    <h1>&#10094; Kanari</h1>
+  </div>
+  <h2>A breath of fresh air</h2>
+  <p class="titletext">In dit full-stack project wordt de controle over gezonde lucht terug in handen van de gebruiker
+    gegeven. Met een slimme hardware sensor, uitgerust platform, volwaardige DevOps en nog zoveel meer, is Kanari het
+    meest ambitieuze project waar ik aan gewerkt heb.</p>
+  <div class="logo-box">
+    <img alt="Logo van Kanari op doosje" src="assets/img/ScreenshotKanari12.png">
+  </div>
+  <h3>Kanari?</h3>
+  <p>Een goede luchtkwaliteit is enorm belangrijk anno 21ste eeuw. Helaas gaat deze er sterk op achteruit in Vlaanderen.
+    Talloze studies en metingen wijzen dit uit. Wanneer we naar de cijfers kijken die binnen gemeten worden, zien we dat
+    die kwaliteit er vele malen slechter is. Deze resultaten zien we overal; zowel op kantoor, in de klas als thuis. De
+    mensen weten tegenwoordig niet meer wanneer en hoe ze moeten ventileren.</p>
+  <p>
+    Buiten het feit dat we pakweg ongezonde lucht inademen, zijn er meer problemen die zich hierdoor voordoen. Zo dalen
+    onze cognitieve prestaties in een ruimte met een te hoge CO2-concentratie. Door de opwarming van de aarde gaat deze
+    toestand helaas nog verslechteren.
+  </p>
+  <img class="photo-large" alt="Schermafdruk problematiek CO2" src="assets/img/ScreenshotKanari13.png">
+  <p>
+    We zien op deze grafieken dat het aantal CO2 partikels per miljoen moleculen in de lucht, ontzettend hard toenemen.
+    Dit zowel binnen als buiten. Dit heeft een nadelige invloed op onze cognitieve scores. Kijken we naar deze scores
+    binnen, dan zien we dat we nóg slechter scoren. Een goede verluchting is dus belangrijk.
+  </p>
+  <p>
+    Om te weten te komen van waar de naam Kanari komt, moeten we terug in de tijd gaan. Om precies te zijn moeten we een
+    kijkje nemen in de mijnbouw. Vroeger werden er in de kolenmijnen kanaries gebruikt als primitieve CO meters. Omdat
+    een kanarie veel sneller ademhaalt, klein is en een hoge stofwisseling heeft in vergelijking met de mijnwerkers,
+    overlijdt de vogel zeer snel als het dodelijk gas koolmonoxide aanwezig is. De mijnwerkers hadden dan nog de
+    gelegenheid om de plek des onheils te verlaten.
+  </p>
+  <p>
+    Omdat een kanarie in huis nemen niet meer van deze tijd is, en al zeker niet om als middel te gebruiken om de
+    luchtkwaliteit te meten, werd Kanari ontworpen. Het principe is juist hetzelfde: Kanari zorgt er dus
+    voor dat onze gebruikers alleen de beste lucht moeten inademen.
+  </p>
+  <h3>Een webshop</h3>
+  <p>De eerste aanraking met Kanari is de webshop. Voor de volledigheid van het project werd er een website ontworpen in
+    de vorm van een webshop, die het product uitlegt aan potentiële klanten. Bij het eerste bezoek worden de cookie
+    voorkeuren gevraagd. Dit wordt gedaan om conform te zijn met
+    de GDPR wetgeving, aangezien er tracking cookies gebruikt worden.</p>
+  <img class="photo-large" alt="GIF webshop" src="assets/img/ScreenshotKanari02.gif">
+  <p>
+    De Kanari webshop heeft uiteraard de mogelijkheid tot het aanschaffen van producten. Bij de onderdeel producten, kan
+    er gekozen worden voor welke aankoop er gegaan wil worden. Er waren twee producten; de Kanari Sensor en
+    Kanari Gold, het premium pakket.
+  </p>
+  <p>
+    In de webshop werd Paypal-integratie toegevoegd zodat producten daadwerkelijk kunnen worden aangekocht. Wanneer de
+    gebruiker beslist om zijn accounttype uit te bereiden naar Kanari Gold, wordt deze uitbreiding automatisch gedaan
+    bij de aankoop.
+  </p>
+  <h3>Kanari sensor</h3>
+  <p>De Kanari sensor is het hart van het project. Het ontwerp van de sensor is zowel praktisch als effectief.
+    De Kanari Sensor is meer dan een microcomputer met wat draadjes aan. Integendeel: de Kanari sensor is een hele
+    beleving.</p>
+  <p>Onze Kanari Sensor werd verpakt in deze doos. Ze bestaat uit de Kanari Sensor, een adapter en een
+    gebruikshandleiding. Een voorbeeld van zo'n pakket is hieronder te zien;</p>
+  <img class="photo-large" alt="Pakket kanari" src="assets/img/ScreenshotKanari05.jpg">
+  <p>Uiteraard blijft de focus op onze Kanari Sensor. Alleen de luchtvochtigheid of de CO2 concentratie kan niet bepalen
+    of de luchtkwaliteit in een ruimte van een goed niveau is. Omdat goede luchtkwaliteit uit verschillende parameters
+    bestaat, zal deze sensor dus ook verschillende waarden moeten kunnen lezen.</p>
+  <p>Concreet meet de sensor de volgende waarden:</p>
+  <ul>
+    <li>
+      CO2
+    </li>
+    <li>
+      Luchtvochtigheid
+    </li>
+    <li>
+      Luchtdruk
+    </li>
+    <li>
+      Temperatuur
+    </li>
+    <li>
+      Fijnstofpartikelen &lt;1.0µm
+    </li>
+    <li>
+      Fijnstofpartikelen &lt;2.5µm
+    </li>
+    <li>
+      Fijnstofpartikelen &lt;10.0µm
+    </li>
+  </ul>
+  <p>
+    Deze waarden worden op het dashboard geplaatst. Ook kunnen deze op een eigen InfluxDB- of Prometheus database worden
+    gezet zodat hobbyisten met deze data aan de slag kunnen gaan. Onze sensor werd dus ook ontwikkeld met het oog op
+    vrijheid van de gebruikers.
+  </p>
+  <img class="photo-large" alt="Kanari sensor" src="assets/img/ScreenshotKanari01.jpg">
+  <h3>Het dashboard</h3>
+  <p>Hieronder is een greep van de features en functionaliteiten van het dashboard opgesomd. Het volledige dashboard
+    bevat veel meer. Voor extra info verwijs ik graag naar de onderkant van deze pagina.</p>
+  <h4>Login en registreren</h4>
+  <img class="photo-large" alt="Kanari login" src="assets/img/ScreenshotKanari04.jpg">
+  <p>Niet-ingelogde gebruikers zullen dit scherm als eerste zien. Zoals elke moderne website heeft ook Kanari een
+    login-pagina
+    waar gebruikers zich moeten aanmelden. Doormiddel van JWT-tokens te gebruiken wordt de autorisatie van de
+    gebruikers gegarandeerd. Elke gebruiker zal uiteraard enkel zijn sensoren te zien krijgen. Zo zorgt Kanari ervoor
+    dat hun gebruikers
+    veilig zijn, zowel in hun huiskamers als online!</p>
+  <p>
+    Nieuwe gebruikers zullen zich uiteraard eerst moeten registreren. Na het invullen van het formulier zijn deze ook
+    onmiddellijk in staat om aan de slag te gaan.
+  </p>
+  <h4>Aanpasbaar dashboard</h4>
+  <p>
+    Elke gebruiker heeft andere noden en voorkeuren. Ook bij Kanari is dit het geval. Hierdoor werd gekozen om de
+    mogelijkheid te geven om het dashboard zelf samen te stellen. Een gebruiker begint met een leeg dashboard met daarop
+    enkel een welkomstboodschap. Via het profiel is er de mogelijkheid tot het zelf samenstellen van het dashboard.
+    Alles kan in een handomdraai getoond of verborgen worden.
+  </p>
+  <img class="photo-large" alt="GIF dashboard" src="assets/img/ScreenshotKanari09.gif">
+  <p>
+    Zo kunnen onder andere de alerts getoond of verborgen worden. Een bepaalde reeks grafieken tevoorschijn getoverd
+    worden, deze van grootte aanpassen, sensordata binnen cards getoond worden, ... Alerts worden ook dynamisch
+    voorgesteld. Indien een grenswaarde overschreden is, zal de kleur en het icoontje van deze alert veranderen. Zo weet
+    de gebruiker op een visuele manier welke maatregelen hij moet nemen.
+  </p>
+  <p>
+    De voorkeuren van het dashboard worden via de backend. Zo zal de gebruiker zijn favoriete dashboard bij elk bezoek
+    onmiddellijk kunnen zien, ongeacht het apparaat waarop hij/zij zich bevindt.
+  </p>
+  <h4>Sensoren bekijken en instellen</h4>
+  <p>
+    Het dashboard zou niet veel zijn zonder de koppeling met haar sensoren. Er kan ontzettend veel informatie
+    geraadpleegd worden over deze technologische hoogstandjes. In de volgende demo wordt getoond hoe een gebruiker per
+    sensor een perfect overzicht heeft over alle gemeten waarden die live gemeten worden.
+  </p>
+  <p>
+    Ook kan er via de geschiedenis op een duidelijke manier bekeken worden welke waarden wanneer gemeten werden. De
+    gebruiker kan de tijdsintervallen zelf instellen om zo het overzicht te bewaren. Ten slotte kunnen alle instellingen
+    bekeken worden van deze sensor en kunnen er alerts voor deze sensor ingesteld worden.
+  </p>
+  <img class="photo-large" alt="GIF Sensoren bekijken" src="assets/img/ScreenshotKanari03.gif">
+  <p>
+    Indien alerts aangemaakt werden zullen deze op het dashboard getoond worden. Ook via Gotify alerts zal de
+    gebruiker op elk ogenblik op de hoogte zijn wanneer er anomalieën optreden. Meer info hierover wordt er verder in
+    deze documentatie gegeven.
+  </p>
+  <p>
+    Wanneer men niet tevreden is over de instellingen van een bepaalde sensor, of men wilt een offset instellen, kan
+    men de sensor ten allen tijde wijzigen. Het instellen van een offset kan bijvoorbeeld handig zijn als men bewust is
+    van een bepaalde afwijking van de gemeten sensordata door bijvoorbeeld een extern verwarmingselement. Met deze
+    offset wordt de gemeten waarde bijgesteld zodat men zeker kan zijn van de meeste accurate meting die er mogelijk is.
+  </p>
+  <img class="photo-large" alt="GIF Sensoren aanpassen" src="assets/img/ScreenshotKanari11.gif">
+  <p>
+    Ten slotte kan de dashboard connectie worden afgezet. Dit kan handig zijn wanneer de gebruiker een hobbyist is, die
+    de sensor voor eigen beheer wil inzetten. Ook kunnen de Prometheus- en/of InfluxDB instellingen geconfigureerd
+    worden.
+  </p>
+  <h4>Sensoren aanmaken en grondplannen plotten</h4>
+  <p>
+    Nieuwe sensoren kunnen op een eenvoudige manier worden toegevoegd aan het platform. Na het klikken op de knop sensor
+    koppelen, zal er een pop-up scherm tevoorschijn komen. Hier vult de gebruiker simpelweg het mac-adres in van de
+    sensor. Door middel van invoer validatie zal ook enkel een mac adres in het correcte formaat ingevuld kunnen worden.
+    Op deze manier ontstaat er een foutentolerant platform.
+  </p>
+  <p>
+    Ook kan de gebruiker de QR-code scannen die bij de desbetreffende sensor hoort. Dan zal het mac adres automatisch
+    ingevuld worden. Omdat privacy en beveiliging een issue is waar bewust op is ingezet, zal de gebruiker eerst
+    akkoord moeten gaan dat de camera gebruikt wordt.
+  </p>
+  <img class="photo-large" alt="GIF Grondplan" src="assets/img/ScreenshotKanari14.gif">
+  <p>
+    Als de sensor is aangemaakt, kan de gebruiker deze toevoegen aan het grondplan. Bij het klikken op de knop sensor
+    toevoegen, zal er gevraagd worden of het om een nieuwe of een bepaalde sensor gaat. De vorige stap kan dus ook op
+    deze pagina worden uitgevoerd. Na het selecteren van de gewenste sensor, kan er op het de gewenste plaats op het
+    grondplan worden geklikt. De sensor zal hier dan getoond worden.
+  </p>
+  <p>
+    Alle sensoren die op het grondplan worden toegevoegd kunnen geselecteerd worden om hun gemeten waarden en hun naam
+    te bekijken. Afhankelijk van de gemeten waarden zullen sensoren een andere kleur hebben;
+  </p>
+  <ul>
+    <li>
+      <strong>Paars:</strong> Geen gemeten waarde of sensor offline
+    </li>
+    <li>
+      <strong>Groen:</strong> CO2 kleiner dan 600
+    </li>
+    <li>
+      <strong>Oranje:</strong> CO2 tussen 601 en 800
+    </li>
+    <li>
+      <strong>Rood:</strong> CO2 groter dan 801
+    </li>
+  </ul>
+  <p>
+    Ten slotte kunnen sensoren ook van het grondplan verwijderd of verplaatst worden. Dit kan simpelweg door de sensor
+    op het grondplan te selecteren en op het desbetreffende icoontje te klikken.
+  </p>
+  <h4>Donkere modus</h4>
+  <p>Voor de gebruiker die graag 's avonds laat achter zijn PC of mobiel toestel zit, werd een dark mode
+    ontwikkeld. Niet alleen is beter voor de batterijduur, ook is dit gezonder voor de ogen. Door middel van een cookie
+    wordt de themakeuze opgeslagen. Zo kan bij een terugkeer naar het dashboard onmiddellijk het favoriete thema
+    geselecteerd worden.</p>
+  <img class="photo-large" alt="GIF Dark mode" src="assets/img/ScreenshotKanari10.gif">
+
+  <br>
+
+  <h3>Werken met Grafana</h3>
+  <p>Om de grafieken op een snelle en overzichtelijke manier te plotten, werd er gekozen om met Grafana te werken.
+    Aangezien de data met Prometheus wordt weggeschreven, is de integratie naar Grafana zeer snel en eenvoudig
+    opgesteld. Per sensor wordt er in onze Grafana instantie een dashboard opgesteld waarnaar de koppeling in het
+    dashboard gemaakt wordt. Dit werkt veel sneller dan dat er, rechtstreeks via een SQL verbinding in typescript,
+    tientallen
+    grafieken geplot zouden moeten worden. Ook de responsiviteit, thema's en instelbare time-ranges zijn mooi
+    meegenomen.</p>
+  <img class="photo-large" alt="Grafana" src="assets/img/ScreenshotKanari06.jpg">
+
+  <h3>Alerts via Gotify</h3>
+  <p>
+    Zoals in het dashboard al beschreven werd, kunnen gebruikers alerts aanmaken. Zo kan bijvoorbeeld gecontroleerd
+    worden of een bepaalde treshhold werd overschreden. Naast de alert op het dashboard zelf, kunnen gebruikers ook
+    notificaties krijgen op externe apparaten. Hiervoor werd tool Gotify gekozen. Gebruikers kunnen via dit platform
+    ook op de hoogte zijn van hun alerts of kunnen de Gotify app downloaden op hun mobiele apparaat. Zo is er de
+    mogelijkheid om 24/7 op de hoogte te blijven van de gemeten waarden van de Kanari Sensor.
+  </p>
+  <img class="photo-large" alt="Grafana" src="assets/img/ScreenshotKanari07.jpg">
+
+  <h3>CI/CD met Drone CI</h3>
+  <p>Er werd voor Kanari gebruik gemaakt van een CI/CD (Continuous Integration, Continuous Deployment) pipeline. Op
+    deze manier werd ervoor gezorgd dat de productie omgeving up-to-date blijft. Als technologie viel de keuze op Drone.
+    Met
+    andere platformen als Ebay, Cisco, VMWare, ect. in die industrie die Drone CI gebruiken, kan gesteld worden dat dit
+    een goede keuze
+    is.</p>
+  <p>
+    Bij elke git commit gaat Drone CI de code testen en controleren of deze nog gebuild kan worden. Als dit niet meer
+    gaat, is dit het teken dat er eventueel foutieve code gepubliceerd werd. Dan zal er ook worden aangeven dat de
+    commit mislukt is.
+  </p>
+  <img class="photo-large" alt="Drone" src="assets/img/ScreenshotKanari08.jpg">
+  <p>Niet alleen bij een commit, maar ook wanneer er een pull request plaatsvindt op de Master-branch, schiet de CI/CD
+    omgeving in actie. Eerst en vooral wordt de code getest of alles nog werkt. Daarna wordt gebuild en gedeployed.
+    Hieronder is een voorbeeld te zien uit het .drone.yml bestand over de CI/CD van het dashboard.</p>
+  <pre>
+    <code>
+        kind: pipeline
+        name: default
+        steps:
+        
+        ...
+        
+        - name: build dashboard
+          image: appleboy/drone-ssh
+          settings:
+            host: localhost
+            username: 
+              from_secret: ssh_username
+            password:
+              from_secret: ssh_password
+            port: 1111
+            proxy_host: kanari.be
+            proxy_port: 22
+            proxy_username:
+              from_secret: ssh_username
+            proxy_password: 
+              from_secret: ssh_password
+            script:
+              - cd ap-valley-20-21-apv06 && git pull && cd ~/
+              - docker build -t registry.tools.kanari.be/dashboard:front ./ap-valley-20-21-apv06/dashboard
+              - docker push registry.tools.kanari.be/dashboard:front
+              - docker-compose up -d dashboard-front
+          when:
+            branch:
+            - master
+            
+        - name: deploy dashboard
+          image: appleboy/drone-ssh
+          settings:
+            host: kanari.be
+            username: 
+              from_secret: ssh_username
+            password:
+              from_secret: ssh_password
+            port: 22
+            script:
+              - docker pull registry.tools.kanari.be/dashboard:front
+              - docker-compose up -d dashboard-front
+          when:
+            branch:
+            - master
+        
+        ...
+    </code>
+  </pre>
+  <p>Door middel van gebruik te maken van from_secret variabelen moeten er geen gevoelige data in plain-text getoond worden in
+    de code. Op deze manier blijft de CI/CD op een veilige manier gebeuren. De build status kan op een handige manier
+    in een markdownbadge getoond worden die in een oogopslag geraadpleegd kan worden.</p>
+    <img alt="Grafana" src="assets/img/ScreenshotKanari15.svg">
+
+  <div class="learn-more">
+    <h3>Krijg je niet genoeg van Kanari?</h3>
+    <p>Wil je graag meer leren over een specifiek deel? Heb je ergens vragen over?</p>
+    <button [routerLink]="'/contact'" class="btn">Contact
+      &#10095;</button>
+  </div>
+</div>
