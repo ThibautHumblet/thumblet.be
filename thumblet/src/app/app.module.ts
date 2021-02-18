@@ -20,6 +20,7 @@ import { MonogamedinoComponent } from './monogamedino/monogamedino.component';
 import { UnityzombieComponent } from './unityzombie/unityzombie.component';
 import { BurrowComponent } from './burrow/burrow.component';
 import { KazousiteComponent } from './kazousite/kazousite.component';
+import { KanariComponent } from './kanari/kanari.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { KazousiteComponent } from './kazousite/kazousite.component';
     MonogamedinoComponent,
     UnityzombieComponent,
     BurrowComponent,
-    KazousiteComponent
+    KazousiteComponent,
+    KanariComponent
   ],
   imports: [
     BrowserModule,

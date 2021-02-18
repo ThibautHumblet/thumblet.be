@@ -12,6 +12,7 @@ import { MonogamedinoComponent } from './monogamedino/monogamedino.component';
 import { UnityzombieComponent } from './unityzombie/unityzombie.component';
 import { BurrowComponent } from './burrow/burrow.component';
 import { KazousiteComponent } from './kazousite/kazousite.component';
+import { KanariComponent } from './kanari/kanari.component';
 
 
 const routes: Routes = [
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'kanari',
+    component: KanariComponent
   },
   {
     path: 'currently',
