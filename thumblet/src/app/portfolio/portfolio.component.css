@@ -124,6 +124,10 @@ a {
     text-decoration: none;
 }
 
+.content {
+    padding-bottom: 1vh;
+}
+
 @media (min-width: 750px){
     .thumbnail{
         width: 65vw;
