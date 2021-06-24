@@ -1,1 +1,48 @@
-<p>matching-and-sourcing works!</p>
+<div class="content">
+  <div class="title" [routerLink]="['/portfolio']">
+    <h1>&#10094; Consultant matching tool</h1>
+  </div>
+  <h2>Matching and sourcing</h2>
+  <p class="titletext">Dit proof-of-concept werd als bachelorproef en stageopdracht ontwikkeld in opdracht van
+    Inetum-Realdolmen. Deze tool stelt het sourcing team in staat om consultants aan opdrachten te koppelen, deze te
+    beheren en op te volgen.</p>
+  <div class="logo-box">
+    <img alt="Logo Inetum-Realdolmen" src="assets/img/ScreenshotRD02.jpg">
+  </div>
+  <h3>Voorwoord</h3>
+  <p>
+    Deze opdracht werd ontwikkeld in samenwerking met de mensen van Inetum-Realdolmen en, mijn medestagiair, Cedric Van
+    Opstal (<a href="https://github.com/CedricVO" target="blank">Github</a>). Cedric nam het onderdeel van de interne en
+    externe
+    consultants onder handen. Ik werkte aan het platform voor de resource officers. Deze demo zal enkel de schermen en
+    functionaliteiten tonen waaraan ik gewerkt heb.
+  </p>
+  <p>
+    Als technologie werd gekozen voor een frontend in Blazor met in de backend een api, geschreven in .NET 5. De taal
+    C# was dus de rode draad tijdens de ontwikkeling van deze applicatie.
+  </p>
+  <h3>Azure</h3>
+  <img class="photo-large" alt="Schermafdruk login" src="assets/img/ScreenshotRD03.gif">
+  <p>
+    Tijdens deze opdracht werd er intensief met Azure gewerkt. Niet alleen werd alle versiebeheer en DevOps via Azure
+    TFS uitgevoerd, ook de hosting, beveiliging en monitoring maakten gebruik van de Azure technologie. Voor het
+    inloggen maakte ik gebruik van Azure Active Directory. Op deze manier kon ik eenvoudig enkel Inetum-Realdolmen
+    accounts laten aanmelden. Ook maakte ik specifieke rollen aan zodat enkel mensen met de rol 'resourceofficer' op het
+    platform kunnen aanmelden.
+  </p>
+  <h3>Beheer van tabellen</h3>
+  <img class="photo-large" alt="Een voorbeeld van het beheren van de tabellen" src="assets/img/ScreenshotRD06.gif">
+  <p>
+    Bij elke tabel is het mogelijk om info aan te maken, aan te passen of te verwijderen. De juiste invoervalidatie en
+    (fout)meldingen worden gegeven om de gebruikservaring zo optimaal mogelijk te maken.
+  </p>
+  <h3>Filteren en sorteren</h3>
+  <p>
+    Elke tabel kan afzonderlijk gefilterd en gesorteerd worden. Op deze manier is het als gebruiker zeer eenvoudig om de
+    juiste info op een snelle en overzichtelijke manier terug te vinden.
+  </p>
+  <div class="image-box">
+    <img class="image-box-two" alt="Een voorbeeld van het sorteren van kolommen" src="assets/img/ScreenshotRD04.gif">
+    <img class="image-box-two" alt="Een voorbeeld van het filteren van een tabel" src="assets/img/ScreenshotRD05.gif">
+  </div>
+</div>
