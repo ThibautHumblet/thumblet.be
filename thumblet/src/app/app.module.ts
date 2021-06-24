@@ -21,6 +21,7 @@ import { UnityzombieComponent } from './unityzombie/unityzombie.component';
 import { BurrowComponent } from './burrow/burrow.component';
 import { KazousiteComponent } from './kazousite/kazousite.component';
 import { KanariComponent } from './kanari/kanari.component';
+import { MatchingAndSourcingComponent } from './matching-and-sourcing/matching-and-sourcing.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { KanariComponent } from './kanari/kanari.component';
     UnityzombieComponent,
     BurrowComponent,
     KazousiteComponent,
-    KanariComponent
+    KanariComponent,
+    MatchingAndSourcingComponent
   ],
   imports: [
     BrowserModule,

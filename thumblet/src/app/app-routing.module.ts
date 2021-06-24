@@ -13,6 +13,7 @@ import { UnityzombieComponent } from './unityzombie/unityzombie.component';
 import { BurrowComponent } from './burrow/burrow.component';
 import { KazousiteComponent } from './kazousite/kazousite.component';
 import { KanariComponent } from './kanari/kanari.component';
+import { MatchingAndSourcingComponent } from './matching-and-sourcing/matching-and-sourcing.component';
 
 
 const routes: Routes = [
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'matching',
+    component: MatchingAndSourcingComponent
   },
   {
     path: 'kanari',
