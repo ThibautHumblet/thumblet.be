@@ -28,55 +28,68 @@ const routes: Routes = [
   },
   {
     path: 'portfolio',
-    component: PortfolioComponent
+    component: PortfolioComponent,
+    data: {title : 'Thumblet.be - portfolio'}
   },
   {
     path: 'aboutme',
-    component: AboutmeComponent
+    component: AboutmeComponent,
+    data: {title : 'Thumblet.be - about me'}
   },
   {
     path: 'contact',
-    component: ContactComponent
+    component: ContactComponent,
+    data: {title : 'Thumblet.be - contact'}
   },
   {
     path: 'matching',
-    component: MatchingAndSourcingComponent
+    component: MatchingAndSourcingComponent,
+    data: {title : 'Thumblet.be - matching'}
   },
   {
     path: 'kanari',
-    component: KanariComponent
+    component: KanariComponent,
+    data: {title : 'Thumblet.be - kanari'}
   },
   {
     path: 'currently',
-    component: CurrentlyComponent
+    component: CurrentlyComponent,
+    data: {title : 'Thumblet.be - currently'}
   },
   {
     path: 'bakerme',
-    component: BakermeComponent
+    component: BakermeComponent,
+    data: {title : 'Thumblet.be - bakerme'}
   },
   {
     path: 'kazouapi',
-    component: KazouapiComponent
+    component: KazouapiComponent,
+    data: {title : 'Thumblet.be - kazou api'}
   },
   {
     path: 'hap',
-    component: HapComponent
+    component: HapComponent,
+    data: {title : 'Thumblet.be - hap'}
   },
   {
     path: 'monogamedino',
-    component: MonogamedinoComponent
+    component: MonogamedinoComponent,
+    data: {title : 'Thumblet.be - monogame'}
   },
   {
     path: 'unityzombie',
-    component: UnityzombieComponent
+    component: UnityzombieComponent,
+    data: {title : 'Thumblet.be - unity'}
   },
   {
     path: 'burrow',
-    component: BurrowComponent
+    component: BurrowComponent,
+    data: {title : 'Thumblet.be - burrow'}
   },
   {
     path: 'kazousite',
-    component: KazousiteComponent
+    component: KazousiteComponent,
+    data: {title : 'Thumblet.be - kazou site'}
   },
 ];
 
