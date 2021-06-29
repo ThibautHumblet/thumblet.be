@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-burrow',
   templateUrl: './burrow.component.html',
-  styleUrls: ['./burrow.component.css']
+  styleUrls: ['./burrow.component.css',
+  '../portfoliostyles.css']
 })
 export class BurrowComponent implements OnInit {
 
